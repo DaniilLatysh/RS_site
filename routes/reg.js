@@ -11,7 +11,7 @@ exports.send = function(req, res){
 	
 	Users.authorize(username, password, function(err, user){
 		if(err){
-			res.redirect('/reg');// error
+			res.redirect('/err');// error
 			console.log(err);
 			
 		
@@ -19,7 +19,7 @@ exports.send = function(req, res){
 			console.log('user_id: '+user._id);
 			req.session.user = user._id;
 			console.log(req.session.user);
-			res.redirect('/'); //регистрация успешна
+			res.redirect('/cobinet'); //регистрация успешна
 		}
 		
 	});

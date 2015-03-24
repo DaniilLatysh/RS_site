@@ -9,10 +9,14 @@ body {
     height: 100%;
 }
 
+h2 {
+        margin: 0px 0;
+}
+
 /* You can change the height of the carousel by changing the height in the class below. It is set to 50% by default, but can be any height! */
 
 .carousel {
-    height: 50%;
+    height: 30%;
 }
 
 .item,
@@ -34,6 +38,6 @@ body {
 }
 
 footer {
-    margin: 50px 0;
+    margin: 30px 0;
 	
 }
