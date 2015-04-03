@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+   "dependencies": {
     "express": "~3.4.8",
     "static-favicon": "~1.0.0",
     "morgan": "~1.0.0",
@@ -26,6 +27,15 @@
 	"grunt-contrib-concat": "*",
 	"grunt-contrib-uglify": "*",
 	"grunt-contrib-cssmin": "*",
-	"chalk": "*"
+	"chalk": "*",
+    "hexo": "^3.0.0",
+    "hexo-generator-archive": "^0.1.0",
+    "hexo-generator-category": "^0.1.0",
+    "hexo-generator-index": "^0.1.0",
+    "hexo-generator-tag": "^0.1.0",
+    "hexo-renderer-ejs": "^0.1.0",
+    "hexo-renderer-marked": "^0.2.4",
+    "hexo-renderer-stylus": "^0.2.0",
+    "hexo-server": "^0.1.2"
   }
 }

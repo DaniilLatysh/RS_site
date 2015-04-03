@@ -1,7 +1,9 @@
 {
+	"scripts":["/js/jquery.js", "/js/bootstrap.min.js"],
+	"styles":["/stylesheets/style.css", "/stylesheets/bootstrap.min.css"],
 	"port":3000,
 	"mongoose": {
-	"uri": "mongodb://localhost/visit",
+	"uri": "mongodb://localhost/visit2",
 		"options": {
 			"socketOptions": {
 				"keepAlive": 1

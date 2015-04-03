@@ -1,6 +1,5 @@
 extends layout
 head
-
 body
 
 block content
@@ -27,12 +26,28 @@ block content
            | console, Neve, API and Chandler Limited mic preamps, Neumann, Microtech Gefell and Royer microphones and a lot more!
            br
            | We’re always looking for new challenges, so please feel free to contact us!
-    hr
+       hr
     .container
+     h2 Sound recording studio
+      p
+       br
       .row
         .col-md-3
-          p Column 1
+          img.img-rounded.button.grow(src='img/slider/graphite hall.jpg', style='margin:5px 0px 15px;', height='200px', alt='equipment', href='equipment')
+          p.style 
+           | Graphite Hall
         .col-md-3
-          p Column 2
-        .col-md-3
-          p Column 3   
+          img.img-rounded.button.grow(src='img/slider/green hall.jpg', style='margin:5px 0px 15px;', height='200px', alt='equipment', href='equipment')
+          p.style
+           | Green Hall
+    .container
+     .row
+        script(type='text/javascript', src='scripts/ckeditor.js')
+        script(type='text/javascript').
+         window.onload = function()
+          {
+            CKEDITOR.replace('wysiwyg-area', {
+            toolbar: 'Basic',
+           });
+          };
+       textarea(name='wysiwyg-area') Здесь вы можете редактировать текст!

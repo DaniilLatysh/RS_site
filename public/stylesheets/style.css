@@ -1,91 +1,55 @@
-#wrapper {
-	width: 80%;
-	max-width: 1700px;
-	min-width: 1400px;
-	margin: 0 auto;
-	border-radius: 10px;
-}
-
-.logo{
-	float: left;
-	margin:30px;
-	table-layout: fixed;
-}
-.header {
-	height: 215px;
-	background: url("../images/bgHead.jpg") 65% 47% no-repeat;
-	table-layout: fixed;
-	margin-top: 0;
-}
-.header h1{
-	color : white;
-	text-shadow:1px 1px 1px;
-	margin:40px;
-	padding-left:150px;
-	float: right;
-	font: 70px Arial, sans-serif;
-}
+html,
 body {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	position: relative;
-	background: url("../images/bgBody2.jpg") 100% 100% no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-}
-nav a {
-	color: black;
-	text-decoration: none;
-}
-nav ul {
-	margin: 0px;
-	padding: 0px;
-	float: left;
-	table-layout: fixed;
-}
-nav li {
-	list-style-position: inside;
-	font: 24px 'Oswald', sans-serif;
-	padding: 10px;
+    height: 100%;
 }
 
-h4{
-	color: gray;
-	text-shadow:1px 1px 1px;
-	font: 18px Arial, sans-serif;
-	margin: 5px;
+h2 {
+	margin: 0px 0;
+	margin-bottom: 1em;
 }
 
-.top-menu li {
-	text-align:center;
-	color:#bfbfbf;
-	cursor:pointer;
-	font-size:18px;
-	background-color:none;
-	line-height:18px;
-	border: 1px solid none;
-	display:table-cell;
-	text-decoration: none;
-	width: 300px;
-	max-height: 20px;
-	table-layout: fixed;
-	background: #36C975;
-	opacity: 0.95;
-	box-sizing: border-box;
+/* You can change the height of the carousel by changing the height in the class below. It is set to 50% by default, but can be any height! */
+
+.carousel {
+    height: 30%;
 }
 
-.top-menu a {
-	color: black;
-	display:block;
-	-moz-box-flex:1;
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
 }
 
-.top-menu a:hover {
-	-moz-box-flex:1;
-	color: white; 
-	text-decoration: none; 
+.style{
+	font-family: Gentium;
+	src: url(GentiumItalic.ttf);
+	font-style: italic;
+	font-size: 12pt;
+  
 }
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/*Filter styles*/
+	.saturate {-webkit-filter: saturate(3);-moz-filter: saturate(3); filter: saturate(3);} //Прописать для всех
+	.grayscale {-webkit-filter: grayscale(100%);}
+	.contrast {-webkit-filter: contrast(160%);}
+	.brightness {-webkit-filter: brightness(0.25);}
+	.blur {-webkit-filter: blur(3px);}
+	.invert {-webkit-filter: invert(100%);}
+	.sepia {-webkit-filter: sepia(100%);}
+	.huerotate {-webkit-filter: hue-rotate(180deg);}
+	.opacity {-webkit-filter: opacity(50%);}
 
 /*Buttons start*/
 .button {
@@ -115,304 +79,8 @@ h4{
 /*Buttons end*/
 
 
-.menu-right{
-	float: right;
-	width:223px;
+
+footer {
+    margin: 30px 0;
 	
-}
-.social{
-	margin-top: 15px;
-	font: 28px Arial, sans-serif;
-	color: #36C975;	
-	text-shadow:1px 1px 1px;
-}
-
-section{
-	margin-left: 23%;
-	margin-right: 15%;
-	padding-bottom: 50px;
-	color: white;
-	font-style: Arial;
-	font-size: 23px;
-	text-decoration:none;
-}
-.selection h2{
-	color : white;
-	text-shadow:1px 1px 1px;
-	margin:40px;
-	padding-left:150px;
-	float: left;
-	font: 70px Arial, sans-serif;
-	text-decoration:none;
-}
-.aside-menu li {
-	font-weight: 400px;
-	list-style-type: none;
-	border-top: 1px solid #36C975;
-	word-wrap: break-word;
-}
-.aside-menu li:first-child {
-	border: none;
-	word-wrap: break-word;
-}
-.aside-menu a {
-	color: #f0f8ff;
-	list-style-position: inside;
-	font: 20px 'Oswald', sans-serif;
-	word-wrap: break-word;
-}
-
-.aside-menu a:hover {
-	-moz-box-flex:1;
-	color: white; 
-	text-decoration: none; 
-}
-
-.content{
-	margin-left: 18%;
-	margin-right: 15%;
-	padding-bottom: 50px;
-	color: white;
-	font-style: Arial;
-	font-size: 23px;
-	text-decoration:none;
-}
-
-.content h2{
-	color : Black;
-	text-shadow:1px 1px 1px;
-	margin:40px;
-	padding-left:150px;
-	float: left;
-	font: 70px Arial, sans-serif;
-	text-decoration:none;
-}
-
-
-blockquote {
-	margin: 0;
-	background: #29c5e6;
-	padding: 10px 20px;
-	font-family: 'Oswald', sans-serif;
-	font-weight: 200px;
-	margin-left: 10%;
-	margin-right: 10%;
-}
-blockquote p {
-	color: white;
-	font-style: italic;
-	font-size: 33px;
-	margin: 0;
-}
-blockquote cite {
-	display: block;
-	font-size: 20px;
-	font-style: normal;
-	color: white;
-	margin: 0;
-	text-align: right;
-}
-
-
-
-.footer{
-	width: 100%;
-	height: 50px;
-	text-align: right;	
-	background: #4C4845;
-	position: relative;
-	clear:both;
-	bottom: 0;
-	border-radius: 5px;
-}
-
-.copyright{	
-	color: #908f8f;
-}
-
-.contact-footer{
-	font: 18px Arial, sans-serif;
-	color: #908f8f;	
-	margin-top: 0px;
-	padding-top: 0;
-	padding-right: 200px;
-	position: relative;
-}
-
-
-#map-canvas{
-	width: 230px;
-	height: 300px;
-
-}
-
-#gallery {
-	width: 725px;
-	margin: 25px auto;
-}
-
-#gallery a {
-	display: block;
-	float: left;
-	margin-bottom: 25px;
-	position: relative;
-	
-	-webkit-box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
-	-moz-box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
-	box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
-}
-
-/*Left and Right margins to images in the middle column*/
-/*This selects the 2nd, 5th and 8th elements*/
-#gallery a:nth-child(3n+2) {
-	margin: 0 25px 25px 25px;
-}
-
-#gallery a img {
-	display: block;
-	-webkit-transition: all 0.5s;
-}
-
-/*Hover effects*/
-#gallery a img:hover {
-	-webkit-filter: none; /*Returns to default state*/
-}
-/*Default state for brightness has to be specified specifically*/
-#gallery a img.brightness:hover {
-	-webkit-filter: brightness(0);
-}
-
-/*Title styles*/
-.title {
-	color: #fff;
-	font-size: 13px;
-	font-weight: bold;
-	position: absolute;
-	left: 0;
-	bottom: 15px;
-	z-index: 1;
-	padding: 5px 7px;
-	background: rgba(0, 0, 0, 0.6);
-}
-
-/*Filter styles*/
-.saturate {-webkit-filter: saturate(3);-moz-filter: saturate(3); filter: saturate(3);} //Прописать для всех
-.grayscale {-webkit-filter: grayscale(100%);}
-.contrast {-webkit-filter: contrast(160%);}
-.brightness {-webkit-filter: brightness(0.25);}
-.blur {-webkit-filter: blur(3px);}
-.invert {-webkit-filter: invert(100%);}
-.sepia {-webkit-filter: sepia(100%);}
-.huerotate {-webkit-filter: hue-rotate(180deg);}
-.opacity {-webkit-filter: opacity(50%);}
-
-
-
-
-.h1{
-	font: 18px Arial, sans-serif;
-	color: #f0f8ff;	
-}
-
-.bord{
-	border: 2px double #36C975; /* Параметры границы */
-    background: none; 
-    padding: 10px;
-}
-
-.image-effect-fall-back{
-width: 200px;
-height: 150px;
-position: relative;
-margin-top: 65px;
--webkit-perspective: 800px;
-perspective: 800px;
-}
-.image-effect-fall-back .image-layer{
-position: absolute;
-top:0;
-left: 0;
-height: 100px;
--webkit-transition: 0.6s;
-transition: 0.6s;
-z-index: 1;
-}
-.image-effect-fall-back:hover .image-layer{
--webkit-transform: rotateX(70deg);
-transform: rotateX(70deg);
-overflow: visible;
-}
-.image-effect-fall-back .image-layer img{
-height: 100%;
-}
-.image-effect-fall-back .image-layer:before{
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: rgba(0, 0, 0, 0.5);
-box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
-opacity: 0;
--webkit-transition: all 0.5s;
-transition: all 0.5s;
--webkit-transform: rotateX(114deg) translateZ(-26px) translateY(110px) scale(0.75);
-transform: rotateX(114deg) translateZ(-26px) translateY(110px) scale(0.75);
--webkit-transform-origin: bottom;
--ms-transform-origin: bottom;
-transform-origin: bottom;
-}
-.image-effect-fall-back:hover .image-layer:before {
-opacity: 0.3;
-}
-.image-effect-fall-back .share-layer{
-position: absolute;
-bottom: 100px;
-left: 0;
-width: 100%;
-height: 50px;
-opacity: 0;
-z-index: 10;
--webkit-transition: 0.6s;
-transition: 0.6s;
--webkit-transform: rotateX(70deg);
-transform: rotateX(70deg);
-}
-.image-effect-fall-back:hover .share-layer {
-opacity: 1;
--webkit-transform: rotateX(0deg) translateY(-70px);
-transform: rotateX(0deg) translateY(-70px);
-}
-.share-button{
-display: inline-block;
-text-decoration: none;
-color: #ffffff;
-padding: 12px;
-width: 80px;
-border-radius: 2px;
-margin: 25px 10px;
-}
-.share-via-facebook{
-background-color:#3b5998;
-}
-.share-via-twitter{
-background-color:#00aced;
-}
-.share-via-google{
-background-color:#d34836;
-}
-.share-via-VK{
-background-color:#1E90FF;
-}
-@media screen and (max-width: 1000px){
-.logo{
-display:none;
-}
-.aside-menu2{
-display:none;
-}
-.aside-menu3{
-display:none;
-}
 }

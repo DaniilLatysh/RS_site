@@ -2,11 +2,13 @@ doctype html
 html
   head
     title Alpha_Visit
+    for style in styles
+        link(rel='stylesheet', href='#{style}')
+    for script in scripts
+        script(src='#{script}')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(http-equiv='content-type', content='text/html; charset=utf-8')
-    link(href='bootstrap/css/bootstrap.min.css', rel='stylesheet', media='screen')
-    link(href='bootstrap/css/half-slider.css', rel='stylesheet', media='screen')
-    
+
   body
   
     // Navigation
@@ -24,11 +26,11 @@ html
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav
             li
-              a(href='#') Clients
+              a.button(href='clients') Clients
             li
-              a(href='#') Equipment
+              a.button(href='equipment') Equipment
             li
-              a(href='#') Contact  
+              a.button(href='#') Contact  
 
 
     header#myCarousel.carousel.slide
@@ -40,13 +42,13 @@ html
 
       .carousel-inner
         .item.active
-          .fill(style="background-image:url('images/slider/11.jpg');")
+          .fill(style="background-image:url('img/slider/11.jpg');")
           .carousel-caption
         .item
-          .fill(style="background-image:url('images/slider/22.jpg');")
+          .fill(style="background-image:url('img/slider/22.jpg');")
           .carousel-caption
         .item
-          .fill(style="background-image:url('images/slider/44.jpg');")
+          .fill(style="background-image:url('img/slider/44.jpg');")
           .carousel-caption
       a.left.carousel-control(href='#myCarousel', data-slide='prev')
         span.icon-prev
@@ -66,9 +68,6 @@ html
         .row
           .col-lg-12
             p Copyright © Your Website 2014
-       
-    script(src='bootstrap/js/jquery.js')
-    script(src='bootstrap/js/bootstrap.min.js')
     script.
       $('.carousel').carousel({
       interval: 5000 //changes the speed
